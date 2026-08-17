@@ -3,32 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gizlilik Politikası - Lojistik Sözlüğü</title>
+    <title>Privacy Policy / Gizlilik Politikası - Logistics Dictionary</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; padding: 24px; max-width: 800px; margin: 0 auto; color: #333; }
-        h1 { color: #1a73e8; }
-        h2 { color: #202124; margin-top: 24px; }
+        :root {
+            --primary: #1a73e8;
+            --text: #202124;
+            --text-secondary: #5f6368;
+            --bg: #ffffff;
+            --card-bg: #f8f9fa;
+            --border: #dadce0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--bg);
+            margin: 0;
+            padding: 24px 16px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 32px;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            border: 1px solid var(--border);
+        }
+        .lang-switch {
+            display: flex;
+            justify-content: flex-end;
+            gap: 8px;
+            margin-bottom: 24px;
+        }
+        .lang-btn {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 14px;
+            color: var(--text-secondary);
+            transition: all 0.2s ease;
+        }
+        .lang-btn.active {
+            background-color: var(--primary);
+            color: #ffffff;
+            border-color: var(--primary);
+        }
+        h1 {
+            color: var(--primary);
+            font-size: 26px;
+            margin-bottom: 8px;
+        }
+        .updated-date {
+            color: var(--text-secondary);
+            font-size: 14px;
+            margin-bottom: 24px;
+        }
+        h2 {
+            color: var(--text);
+            font-size: 18px;
+            margin-top: 24px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 6px;
+        }
+        p, li {
+            color: #3c4043;
+            font-size: 15px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .hidden {
+            display: none;
+        }
     </style>
 </head>
 <body>
-    <h1>Gizlilik Politikası</h1>
-    <p>Son Güncelleme: 17 Ağustos 2026</p>
-    <p><strong>Lojistik Sözlüğü</strong> ("Uygulama") olarak kullanıcılarımızın gizliliğine önem veriyoruz. Bu gizlilik politikası, uygulamamızı kullandığınızda toplanan bilgiler ve bunların nasıl kullanıldığı hakkında sizi bilgilendirmek amacıyla hazırlanmıştır.</p>
 
-    <h2>1. Toplanan Bilgiler</h2>
-    <p>Uygulamamız doğrudan ad, soyad, e-posta veya telefon numarası gibi kişisel kimlik bilgilerinizi <strong>toplamaz ve saklamaz</strong>. Uygulama içi tercihleriniz ve favorileriniz yalnızca cihazınızda yerel (Room/DataStore) olarak saklanır.</p>
+<div class="container">
+    <!-- Language Switcher Buttons -->
+    <div class="lang-switch">
+        <button class="lang-btn active" id="btn-tr" onclick="setLang('tr')">🇹🇷 Türkçe</button>
+        <button class="lang-btn" id="btn-en" onclick="setLang('en')">🇬🇧 English</button>
+    </div>
 
-    <h2>2. Üçüncü Taraf Hizmetler ve Reklamlar</h2>
-    <p>Uygulama, reklam gösterimi için <strong>Google AdMob</strong> hizmetini kullanmaktadır. Google AdMob, size ilgi alanlarınıza uygun reklamlar sunabilmek amacıyla cihaz kimliği (Advertising ID), yaklaşık konum veya cihaz bilgileri gibi anonim verileri toplayabilir. Google'ın bu verileri nasıl kullandığını öğrenmek için <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Gizlilik Politikası</a>'nı inceleyebilirsiniz.</p>
+    <!-- TÜRKÇE İÇERİK -->
+    <div id="content-tr">
+        <h1>Gizlilik Politikası</h1>
+        <div class="updated-date">Son Güncelleme: 17 Ağustos 2026</div>
 
-    <h2>3. Çocukların Gizliliği</h2>
-    <p>Uygulamamız 13 yaşın altındaki çocuklardan bilerek kişisel veri toplamaz.</p>
+        <p><strong>Lojistik Sözlüğü</strong> ("Uygulama") olarak kullanıcılarımızın gizliliğine son derece önem veriyoruz. Bu gizlilik politikası, uygulamamızı kullandığınızda toplanan bilgiler ve bunların nasıl kullanıldığı hakkında sizi bilgilendirmek amacıyla hazırlanmıştır.</p>
 
-    <h2>4. Politika Değişiklikleri</h2>
-    <p>Gizlilik politikamız zaman zaman güncellenebilir. Değişiklikler bu sayfada yayımlandığı andan itibaren geçerlidir.</p>
+        <h2>1. Toplanan Bilgiler</h2>
+        <p>Uygulamamız ad, soyad, e-posta veya telefon numarası gibi kişisel kimlik bilgilerinizi doğrudan <strong>toplamaz ve saklamaz</strong>. Uygulama içi arama geçmişi veya favoriler gibi tercihleriniz yalnızca cihazınızın yerel hafızasında saklanır ve sunucularımıza aktarılmaz.</p>
 
-    <h2>5. İletişim</h2>
-    <p>Gizlilik politikamızla ilgili herhangi bir sorunuz varsa bizimle iletişime geçebilirsiniz:</p>
-    <p>E-posta: <strong>iletisim@gultassoftware.com</strong></p>
+        <h2>2. Üçüncü Taraf Hizmetler ve Reklamlar</h2>
+        <p>Uygulama, reklam gösterimi sağlamak amacıyla <strong>Google AdMob</strong> hizmetini kullanmaktadır. Google AdMob, ilgi alanlarınıza uygun reklamlar sunabilmek ve analiz yapmak amacıyla anonim cihaz bilgileri (Advertising ID, cihaz modeli, yaklaşık konum vb.) toplayabilir.</p>
+        <p>Google'ın verileri nasıl işlediği hakkında daha fazla bilgi için lütfen <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Gizlilik ve Şartlar</a> sayfasını ziyaret edin.</p>
+
+        <h2>3. Çocukların Gizliliği</h2>
+        <p>Uygulamamız 13 yaşın altındaki çocukları hedef almaz ve bilerek çocuklardan kişisel bilgi toplamaz.</p>
+
+        <h2>4. Politika Değişiklikleri</h2>
+        <p>Gizlilik politikamız zaman zaman güncellenebilir. Herhangi bir değişiklik bu sayfada yayımlandığı andan itibaren geçerli sayılır.</p>
+
+        <h2>5. İletişim</h2>
+        <p>Gizlilik politikamızla ilgili herhangi bir sorunuz, öneriniz veya geri bildiriminiz olması durumunda bizimle iletişime geçebilirsiniz:</p>
+        <p><strong>E-posta:</strong> <a href="mailto:iletisim@gultassoftware.com">iletisim@gultassoftware.com</a></p>
+    </div>
+
+    <!-- ENGLISH CONTENT -->
+    <div id="content-en" class="hidden">
+        <h1>Privacy Policy</h1>
+        <div class="updated-date">Last Updated: August 17, 2026</div>
+
+        <p>At <strong>Logistics Dictionary</strong> ("the App"), we are committed to protecting your privacy. This Privacy Policy explains how information is handled when you use our mobile application.</p>
+
+        <h2>1. Information Collection and Use</h2>
+        <p>Our app does <strong>not</strong> collect, store, or transmit any personally identifiable information (such as your name, email address, or phone number). Any user preferences, favorites, or search history are stored solely locally on your device.</p>
+
+        <h2>2. Third-Party Services & Advertising</h2>
+        <p>The App uses <strong>Google AdMob</strong> to display advertisements. AdMob may collect and process anonymous data, such as your device's Advertising ID, approximate location, and device metrics to serve relevant ads and measure ad performance.</p>
+        <p>For more information on how Google uses data, please visit <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy & Terms</a>.</p>
+
+        <h2>3. Children's Privacy</h2>
+        <p>Our application is not directed to children under the age of 13, and we do not knowingly collect personal information from children.</p>
+
+        <h2>4. Changes to This Privacy Policy</h2>
+        <p>We may update our Privacy Policy from time to time. Any changes will become effective immediately upon posting on this page.</p>
+
+        <h2>5. Contact Us</h2>
+        <p>If you have any questions or suggestions regarding our Privacy Policy, feel free to contact us:</p>
+        <p><strong>Email:</strong> <a href="mailto:iletisim@gultassoftware.com">iletisim@gultassoftware.com</a></p>
+    </div>
+</div>
+
+<script>
+    function setLang(lang) {
+        const trContent = document.getElementById('content-tr');
+        const enContent = document.getElementById('content-en');
+        const btnTr = document.getElementById('btn-tr');
+        const btnEn = document.getElementById('btn-en');
+
+        if (lang === 'en') {
+            trContent.classList.add('hidden');
+            enContent.classList.remove('hidden');
+            btnEn.classList.add('active');
+            btnTr.classList.remove('active');
+        } else {
+            enContent.classList.add('hidden');
+            trContent.classList.remove('hidden');
+            btnTr.classList.add('active');
+            btnEn.classList.remove('active');
+        }
+    }
+
+    // Tarayıcı dili İngilizce ise varsayılan olarak İngilizce aç
+    if (navigator.language && !navigator.language.startsWith('tr')) {
+        setLang('en');
+    }
+</script>
+
 </body>
 </html>
